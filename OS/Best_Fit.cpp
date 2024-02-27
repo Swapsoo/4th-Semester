@@ -10,14 +10,16 @@ int main() {
     cin >> n2;
 
     // Input memory blocks
-    for (i = 0; i < n1; i++) {
-        cout << "Enter memory block " << i + 1 << ": ";
+    cout << "Enter memory blocks :  ";
+    for (i = 0; i < n1; i++)
+    {
         cin >> block[i];
     }
 
     // Input process sizes
-    for (i = 0; i < n2; i++) {
-        cout << "Enter memory required by process " << i + 1 << ": ";
+    cout << "Enter memory required by processes : ";
+     for (i = 0; i < n2; i++) 
+    {
         cin >> process[i];
     }
 
