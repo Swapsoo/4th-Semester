@@ -7,14 +7,21 @@ int main(){
     cin>>n1;
     cout<<"Enter the number of processes :";
     cin>>n2;
-    for(i=0;i<n1;i++){
-        cout<<"Enter memeory block "<<i+1<<":";
-        cin>>block[i];
+    
+    // Input memory blocks
+    cout << "Enter memory blocks :  ";
+    for (i = 0; i < n1; i++)
+    {
+        cin >> block[i];
     }
-    for(i=0;i<n2;i++){
-        cout<<"Enter the memory required by process "<<i+1<<":";
-        cin>>process[i];
+
+    // Input process sizes
+    cout << "Enter memory required by processes : ";
+     for (i = 0; i < n2; i++) 
+    {
+        cin >> process[i];
     }
+    
     cout<<"Process\tProcess Size\tMemory Block"<<endl;
     for(i=0;i<n2;i++){
         check=0;
